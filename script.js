@@ -1,6 +1,3 @@
-function limparNome(){
-    campo.value = '';
-};
 
 //register input data
 let campo = document.getElementById("teste");
@@ -16,10 +13,14 @@ but.onclick = function(){
         participantes.push(campo.value);
         alert('Muito obrigado, você está participando do sorteio');
         limparNome();
-    };
+    }
+}
     
     // return nameArray - 
-    console.log(participantes);
+console.log(participantes);
+
+function limparNome(){
+    campo.value = '';
 };
 
 //onclick event button Sortear
